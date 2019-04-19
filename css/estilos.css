@@ -1,6 +1,218 @@
+/*
+ 
+ Yb    dP    db    88""Yb 88    db    88""Yb 88     888888 .dP"Y8 
+  Yb  dP    dPYb   88__dP 88   dPYb   88__dP 88     88__   `Ybo." 
+   YbdP    dP__Yb  88"Yb  88  dP__Yb  88""Yb 88  .o 88""   o.`Y8b 
+    YP    dP""""Yb 88  Yb 88 dP""""Yb 88oodP 88ood8 888888 8bodP' 
+ 
+*/
+:root {
+    /* Colores */
+    --navegacion   : #ffffff;
+    --naveHover    : #71B100;
+    --bordeAnuncio : #B5B5B5;
+    --fondoAnuncio : #F5F5F5;
+    --precioAnuncio: #71B100;
+    --botonAmarillo: #e08709;
+    --botonVerde   : #71B100;
+
+    /* Fuentes */
+    --principal : 'Lato', sans-serif;
+}
+/*
+ 
+  dP""b8 88      dP"Yb  88""Yb    db    88     888888 .dP"Y8 
+ dP   `" 88     dP   Yb 88__dP   dPYb   88     88__   `Ybo." 
+ Yb  "88 88  .o Yb   dP 88""Yb  dP__Yb  88  .o 88""   o.`Y8b 
+  YboodP 88ood8  YbodP  88oodP dP""""Yb 88ood8 888888 8bodP' 
+ 
+*/
 html {
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
     box-sizing: border-box;
 }
 *, *:before, *:after {
     box-sizing: inherit;
+}
+img {
+    max-width: 100%;
+}
+.contenedor {
+    max-width: 120rem; /** 120rem = 1200px **/
+    margin: 0 auto;
+}
+body {
+    font-family: var(--principal);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+/*
+ 
+ 88   88 888888 88 88     88 8888b.     db    8888b.  888888 .dP"Y8 
+ 88   88   88   88 88     88  8I  Yb   dPYb    8I  Yb 88__   `Ybo." 
+ Y8   8P   88   88 88  .o 88  8I  dY  dP__Yb   8I  dY 88""   o.`Y8b 
+ `YbodP'   88   88 88ood8 88 8888Y"  dP""""Yb 8888Y"  888888 8bodP' 
+ 
+*/
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+/*
+ 
+ 88""Yb  dP"Yb  888888  dP"Yb  88b 88 888888 .dP"Y8 
+ 88__dP dP   Yb   88   dP   Yb 88Yb88 88__   `Ybo." 
+ 88""Yb Yb   dP   88   Yb   dP 88 Y88 88""   o.`Y8b 
+ 88oodP  YbodP    88    YbodP  88  Y8 888888 8bodP' 
+ 
+*/
+.boton {
+    text-decoration: none;
+    color: var(--navegacion);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+}
+.boton-amarillo {
+    background-color: var(--botonAmarillo);
+}
+.boton-verde {
+    background-color: var(--botonVerde);
+}
+
+/*
+ 
+ 88  88 888888    db    8888b.  888888 88""Yb 
+ 88  88 88__     dPYb    8I  Yb 88__   88__dP 
+ 888888 88""    dP__Yb   8I  dY 88""   88"Yb  
+ 88  88 888888 dP""""Yb 8888Y"  888888 88  Yb 
+ 
+*/
+
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    /*muestra la imagen del centro a fuera*/
+    background-position: center center;
+    /*Ajusta la imagen al espacio respetando las proporciones*/
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenido-header h1 {
+    color: var(--navegacion);
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+/*
+ 
+ 88b 88    db    Yb    dP 888888  dP""b8    db     dP""b8 88  dP"Yb  88b 88 
+ 88Yb88   dPYb    Yb  dP  88__   dP   `"   dPYb   dP   `" 88 dP   Yb 88Yb88 
+ 88 Y88  dP__Yb    YbdP   88""   Yb  "88  dP__Yb  Yb      88 Yb   dP 88 Y88 
+ 88  Y8 dP""""Yb    YP    888888  YboodP dP""""Yb  YboodP 88  YbodP  88  Y8 
+ 
+*/
+.navegacion a {
+    color: var(--navegacion);
+    text-decoration: none;
+    font-size: 1.8rem; /** 1.8rem = 18pixeles **/
+    margin-right: 2rem;
+}
+.navegacion a:hover {
+    color: var(--naveHover);
+}
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+/*
+ 
+ 88  dP""b8  dP"Yb  88b 88  dP"Yb  .dP"Y8     88b 88  dP"Yb  .dP"Y8  dP"Yb  888888 88""Yb  dP"Yb  .dP"Y8 
+ 88 dP   `" dP   Yb 88Yb88 dP   Yb `Ybo."     88Yb88 dP   Yb `Ybo." dP   Yb   88   88__dP dP   Yb `Ybo." 
+ 88 Yb      Yb   dP 88 Y88 Yb   dP o.`Y8b     88 Y88 Yb   dP o.`Y8b Yb   dP   88   88"Yb  Yb   dP o.`Y8b 
+ 88  YboodP  YbodP  88  Y8  YbodP  8bodP'     88  Y8  YbodP  8bodP'  YbodP    88   88  Yb  YbodP  8bodP' 
+ 
+*/
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+.icono {
+    flex-basis: calc(33.3% - 1rem);
+}
+.icono h3 {
+    text-transform: uppercase;
+}
+
+/*
+ 
+    db    88b 88 88   88 88b 88  dP""b8 88  dP"Yb  .dP"Y8 
+   dPYb   88Yb88 88   88 88Yb88 dP   `" 88 dP   Yb `Ybo." 
+  dP__Yb  88 Y88 Y8   8P 88 Y88 Yb      88 Yb   dP o.`Y8b 
+ dP""""Yb 88  Y8 `YbodP' 88  Y8  YboodP 88  YbodP  8bodP' 
+ 
+*/
+.contenedor-anuncios {
+    display: flex;
+    justify-content: space-between;
+}
+.anuncio {
+    flex-basis: calc(33.3% - 1rem);
+    border: 1px solid var(--bordeAnuncio);
+    background-color: var(--fondoAnuncio);
+}
+.contenido-anuncio {
+    padding: 2rem;
+}
+.contenido-anuncio h3,
+.contenido-anuncio p {
+    margin: 0;
+}
+.precio {
+    color: var(--precioAnuncio);
+    font-weight: 700;
+}
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
 }

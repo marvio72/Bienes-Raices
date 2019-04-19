@@ -4,77 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
     <title>BienesRaices</title>
 </head>
 <body>
-    <header>
-        <a href="/">
-            <img src="img/logo.svg" alt="Logotipo de BienesRaices">
-        </a>
+    <header class="site-header inicio">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/">
+                    <img src="img/logo.svg" alt="Logotipo de BienesRaices">
+                </a>
 
-        <nav>
-            <a href="nosotros.html">Nosotros</a>
-            <a href="anuncio.html">Anuncios</a>
-            <a href="blog.html">Blog</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-
-        <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
-
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncio.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div><!--barra-->
+            
+            <h1>Venta de Casas y Departamentos Exclusivos de Lujo</h1>
+        
+        </div> <!--contenedor-->
     </header>
 
-    <section>
-    <h2>Más Sobre Nosotros</h2>
-        <div>
-            <img src="img/icono1.svg" alt="icono de candado">
-            <h3>Seguridad</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam exercitationem dolorem tenetur blanditiis harum suscipit nesciunt sint ipsa tempore.
-            </p>
-        </div>
+    <section class="contenedor seccion">
+    <h2 class="fw-300 centrar-texto">Más Sobre Nosotros</h2>
+        <div class="iconos-nosotros">
+            <div class="icono centrar-texto">
+                <img src="img/icono1.svg" alt="icono de candado">
+                <h3>Seguridad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam exercitationem dolorem tenetur blanditiis harum suscipit nesciunt sint ipsa tempore.
+                </p>
+            </div>
 
-        <div>
-            <img src="img/icono2.svg" alt="icono de dinero">
-            <h3>El mejor Precio</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptates dolor, saepe fuga natus debitis reiciendis adipisci autem minima vel.</p>
-        </div>
+            <div class="icono centrar-texto">
+                <img src="img/icono2.svg" alt="icono de dinero">
+                <h3>El mejor Precio</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptates dolor, saepe fuga natus debitis reiciendis adipisci autem minima vel.</p>
+            </div>
 
-        <div>
-            <img src="img/icono3.svg" alt="icono de reloj">
-            <h3>A tiempo</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis praesentium adipisci tempore cum aut perferendis repellendus eveniet quisquam voluptate?</p>
-        </div>
+            <div class="icono centrar-texto">
+                <img src="img/icono3.svg" alt="icono de reloj">
+                <h3>A tiempo</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, perspiciatis praesentium adipisci tempore cum aut perferendis repellendus eveniet quisquam voluptate?</p>
+            </div>
+        </div><!--iconos-nosotros-->
     </section>
 
-    <main>
-    <h2>Casas y Depas en Venta</h2>
-    
-    <div>
-        <img src="img/anuncio1.jpg" alt="Casa en el Lago">  
-        <h3>Casa de Lujo en el Lago</h3>
-        <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
-        <p>$3,000,000</p>
-        <a href="#">Ver Propiedad</a>
-    </div>
+    <main class="seccion contenedor">
+        <h2 class="fw-300 centrar-texto">Casas y Depas en Venta</h2>
+        <div class="contenedor-anuncios">
+            <div class="anuncio">
+                <img src="img/anuncio1.jpg" alt="Casa en el Lago">
+                <div class="contenido-anuncio">
+                    <h3 class="fw-300">Casa de Lujo en el Lago</h3>
+                    <p>Casa en el lago con excelente vista, acabados de lujo a un excelente precio</p>
+                    <p class="precio">$3,000,000</p>
+                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                </div>
+            </div>
 
-    <div>
-        <img src="img/anuncio2.jpg" alt="Casa terminados de Lujo">
-        <h3>Casa terminados de Lujo</h3>
-        <p>Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
-        <p>$2,000,000</p>
-        <a href="#">Ver Propiedad</a>
-    </div>
+            <div class="anuncio">
+                <img src="img/anuncio2.jpg" alt="Casa terminados de Lujo">
+                <div class="contenido-anuncio">
+                    <h3 class="fw-300">Casa terminados de Lujo</h3>
+                    <p>Casa con diseño moderno, así como tecnología inteligente y amueblada</p>
+                    <p class="precio">$2,000,000</p>
+                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                </div>
+            </div>
 
-    <div>
-        <img src="img/anuncio3.jpg" alt="Casa con Alberca">
-        <h3>Casa con Alberca</h3>
-        <p>Casa con alberca y acabados de Lujo en la ciudad, excelente oportunidad</p>
-        <p>$3,000,000</p>
-        <a href="#">Ver Propiedad</a>
-    </div>
-    
-    <a href="anuncios.html">Ver Todas</a>
+            <div class="anuncio">
+                <img src="img/anuncio3.jpg" alt="Casa con Alberca">
+                <div class="contenido-anuncio">
+                    <h3 class="fw-300">Casa con Alberca</h3>
+                    <p>Casa con alberca y acabados de Lujo en la ciudad, excelente oportunidad</p>
+                    <p class="precio">$3,000,000</p>
+                    <a href="#" class="boton boton-amarillo d-block">Ver Propiedad</a>
+                </div>
+            </div>
+        </div><!--contenedor-anuncios-->
+        <div class="ver-todas">
+            <a href="anuncios.html" class="boton boton-verde">Ver Todas</a>
+        </div>
     </main>
 
     <section>
@@ -110,7 +125,7 @@
     </section>
 
     <footer>
-        <nav>
+        <nav class="navegacion">
             <a href="nosotros.html">Nosotros</a>
             <a href="anuncio.html">Anuncios</a>
             <a href="blog.html">Blog</a>
