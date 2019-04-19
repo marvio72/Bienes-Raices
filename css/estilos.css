@@ -122,7 +122,10 @@ h4 {
  88  88 888888 dP""""Yb 8888Y"  888888 88  Yb 
  
 */
-
+.site-header {
+    background-color: var(--fondoFooter);
+    padding: 1rem 0 3rem 0;
+}
 .site-header.inicio {
     background-image: url(../img/header.jpg);
     /*muestra la imagen del centro a fuera*/
@@ -366,4 +369,37 @@ h4 {
 .copyright {
     margin: 0;
     color: var(--textoTestimonial);
+}
+/*
+ 
+ 88 88b 88 888888 888888 88""Yb 88b 88    db    .dP"Y8 
+ 88 88Yb88   88   88__   88__dP 88Yb88   dPYb   `Ybo." 
+ 88 88 Y88   88   88""   88"Yb  88 Y88  dP__Yb  o.`Y8b 
+ 88 88  Y8   88   888888 88  Yb 88  Y8 dP""""Yb 8bodP' 
+ 
+*/
+/*
+ 
+ 88b 88  dP"Yb  .dP"Y8  dP"Yb  888888 88""Yb  dP"Yb  .dP"Y8 
+ 88Yb88 dP   Yb `Ybo." dP   Yb   88   88__dP dP   Yb `Ybo." 
+ 88 Y88 Yb   dP o.`Y8b Yb   dP   88   88"Yb  Yb   dP o.`Y8b 
+ 88  Y8  YbodP  8bodP'  YbodP    88   88  Yb  YbodP  8bodP' 
+ 
+*/
+.descripcion-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    grid-column-gap: 2rem;
+}
+.texto-nosotros blockquote {
+    margin: 0;
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 3rem 0;
+}
+.imagen-nosotros {
+    flex-basis: 40%;
+}
+.texto-nosotros {
+    flex-basis: calc(60% - 2rem);
 }
