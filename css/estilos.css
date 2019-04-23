@@ -88,6 +88,9 @@ h4 {
 .d-block {
     display: block!important;
 }
+.contenido-centrado {
+    max-width: 80rem;
+}
 /*
  
  88""Yb  dP"Yb  888888  dP"Yb  88b 88 888888 .dP"Y8 
@@ -204,11 +207,16 @@ h4 {
 .contenedor-anuncios {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .anuncio {
-    flex-basis: calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
+    /* flex-grow: 0;  1*/
+    /* flex-shrink: 0; 2 */
+    /* flex-basis: calc(33.3% - 1rem); 3 */
     border: 1px solid var(--bordeAnuncio);
     background-color: var(--fondoAnuncio);
+    margin-bottom: 2rem;
 }
 .contenido-anuncio {
     padding: 2rem;
@@ -226,6 +234,8 @@ h4 {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
 }
 .iconos-caracteristicas img {
     padding-right: 2rem;
@@ -402,4 +412,17 @@ h4 {
 }
 .texto-nosotros {
     flex-basis: calc(60% - 2rem);
+}
+/*
+ 
+    db    88b 88 88   88 88b 88  dP""b8 88  dP"Yb  
+   dPYb   88Yb88 88   88 88Yb88 dP   `" 88 dP   Yb 
+  dP__Yb  88 Y88 Y8   8P 88 Y88 Yb      88 Yb   dP 
+ dP""""Yb 88  Y8 `YbodP' 88  Y8  YboodP 88  YbodP  
+ 
+*/
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
 }
